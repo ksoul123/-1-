@@ -1,0 +1,9 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <h1>Detail Page</h1>
+    <div>
+        <h2>{{post.title}}</h2>
+        <p>{{post.text}}</p>
+        <a href="{% url 'home' %}">호옴</a>
+    </div>
+{% endblock %}
